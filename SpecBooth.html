@@ -8,11 +8,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	<style>
-	 .carousel-control-prev-icon,
-    	 .carousel-control-next-icon {
-        	background-color: white ; /* Change this to the desired color */
-        	color: #77b076; /* Change this to the desired color for the control icon */
-    	}
         /* Custom CSS for contact section */
 		.custom-navbar {
             background-color: #b8c8e3; /* Change to your desired background color */
@@ -71,12 +66,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
+				 <li class="nav-item">
                     <a class="nav-link" href="#pictures">Gallery</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>        
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
@@ -119,92 +114,33 @@
         </div>
     </section>
     <!-- Videos	-->
-	<!-- Videos	-->
-<div class="container mt-5">
-    <h2>Shorts</h2>       
-    <div id="videoCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#videoCarousel" data-slide-to="1"></li>
-            <li data-target="#videoCarousel" data-slide-to="2"></li>
-            <li data-target="#videoCarousel" data-slide-to="3"></li>
-            <li data-target="#videoCarousel" data-slide-to="4"></li>
-            <li data-target="#videoCarousel" data-slide-to="5"></li>
-            <li data-target="#videoCarousel" data-slide-to="6"></li>
-	<!--<li data-target="#videoCarousel" data-slide-to="7"></li>
-            <!-- Add more indicators as needed -->
-        </ol>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
+	<div class="container mt-5">
+        <h2>Video Gallery</h2>
+        <div class="row">
             <!-- Video 1 -->
-            <div class="carousel-item active text-center">
-                <video controls width="100%" style="max-width: 320px;" class="mx-auto" data-src="video1.mp4" autoplay="false" muted>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <video controls width="100%" muted>
                     <source src="videos/v1.mp4" type="video/mp4">
                 </video>
             </div>
+
             <!-- Video 2 -->
-            <div class="carousel-item text-center">
-                <video controls width="100%" style="max-width: 320px;" class="mx-auto" data-src="video2.mp4" autoplay="false" muted>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <video controls width="100%" muted>
                     <source src="videos/v2.mp4" type="video/mp4">
                 </video>
             </div>
 
             <!-- Video 3 -->
-            <div class="carousel-item text-center">
-                <video controls width="100%" style="max-width: 320px;" class="mx-auto" data-src="video3.mp4" autoplay="false" muted>
-                    <source src="videos/v3.mp4" type="video/mp4">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <video controls width="100%" muted>
+                    <source src="videos/v8.mp4" type="video/mp4">
                 </video>
             </div>
 
             <!-- Add more videos as needed -->
             <!-- Video 4 -->
-            <div class="carousel-item text-center">
-                <video controls width="100%" style="max-width: 320px;" class="mx-auto" data-src="video4.mp4" autoplay="false" muted>
-                    <source src="videos/v4.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <!-- Video 5 -->
-            <div class="carousel-item text-center">
-                <video controls width="100%" style="max-width: 320px;" class="mx-auto" data-src="video5.mp4" autoplay="false" muted>
-                    <source src="videos/v5.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <!-- Video 6 -->
-            <div class="carousel-item text-center">
-                <video controls width="100%" style="max-width: 320px;" class="mx-auto" data-src="video6.mp4" autoplay="false" muted>
-                    <source src="videos/v6.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <!-- Video 7 -->
-            <div class="carousel-item text-center">
-                <video controls width="100%" style="max-width: 320px;" class="mx-auto" data-src="video7.mp4" autoplay="false" muted>
-                    <source src="videos/v7.mp4" type="video/mp4">
-                </video>
-            </div>
-	    <!-- Video 8
-            <div class="carousel-item active text-center">
-                <video controls width="100%" style="max-width: 320px;" class="mx-auto" data-src="video8.mp4" autoplay="false" muted>
-                    <source src="videos/v8.mp4" type="video/mp4">
-                </video>
-            </div> -->
-        </div>
-	
-        <!-- Custom Controls -->
-        <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
+	 <!-- Videos	-->
 
    <!-- Services Section -->
     <section id="services" class="py-5">
@@ -280,8 +216,8 @@
 				
                 <p>Email: specbooth@gmail.com</p>
                 <p>
-					<a href="https://wa.me/0677438364"><i class="fab fa-whatsapp"></i>Whatsapp me</a><br>
-                    <a href="https://www.facebook.com/profile.php?id=100086244047726" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+					<a href="whatsapp://send?phone=0677438364"><i class="fab fa-whatsapp"></i>Whatsapp me</a><br>
+                    <a href="https://www.facebook.com/people/Spec-booth/100087413714094/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
                     <br>
                     <a href="https://www.instagram.com/specbooth/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
                 </p>
@@ -292,7 +228,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+	<!-- Add Intersection Observer script for auto-playing videos in view -->
 	<script>
         const videoElements = document.querySelectorAll('video');
 
@@ -302,7 +238,7 @@
                     const video = entry.target;
                     if (!video.playing) {
                         video.play();
-                        video.playing = false;
+                        video.playing = true;
                     }
                 } else {
                     const video = entry.target;
