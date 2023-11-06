@@ -228,24 +228,19 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<!-- Add Intersection Observer script for auto-playing videos in view -->
-	<script>
+ <!-- Add Intersection Observer script for autoplaying videos in view -->
+    <script>
         const videoElements = document.querySelectorAll('video');
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
+                const video = entry.target;
                 if (entry.isIntersecting) {
-                    const video = entry.target;
-                    if (!video.playing) {
+                    if (video.paused) {
                         video.play();
-                        video.playing = true;
                     }
                 } else {
-                    const video = entry.target;
-                    if (video.playing) {
-                        video.pause();
-                        video.playing = false;
-                    }
+                    video.pause();
                 }
             });
         });
